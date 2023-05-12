@@ -48,10 +48,33 @@ create table DimCliente(
 ClienteKey int identity(1,1) primary key, --Llave surrogada
 idCliente varchar(100) not null, --Llave de negocio
 NombreCliente varchar(100) not null default 'Cliente desconocido',
-DireccionCliente varchar(250) not null default 'Direccion desconocida')
+DireccionCliente varchar(250) not null default 'Direccion desconocida',
+Activo char(1) not null default 'S', --Se manejara 'S' para activo y 'N' inactivo
+FechaInicio date not null default getdate(), --Fecha de inicio del registro activo
+FechaFin date null)
 go
 
+--Crear tabla de hechos
+create table FactVentas(
+RepresentanteVentasKey int not null foreign key 
+references DimRepresentanteVentas(RepresentanteVentasKey),
+FechasKey int not null foreign key
+references DimFechas(FechasKey),
+OrdenVentaKey int not null foreign key 
+references DimOrdenVenta(OrdenVentaKey),
+ClienteKey int not null foreign key
+references DimCliente(ClienteKey),
+ProductoKey int not null foreign key
+references DimProducto(ProductoKey),
+MontoPorCliente float not null default 0,
+MontoPorProducto float not null default 0,
+MontoPorPromocion float not null default 0)
+go
 
+--Crear la llave primaria de la tabla de hechos
+alter table FactVentas
+Add constraint PK_FactVentas PRIMARY KEY(RepresentanteVentasKey,
+FechasKey, OrdenVentaKey, ClienteKey, ProductoKey)
 
 
 
