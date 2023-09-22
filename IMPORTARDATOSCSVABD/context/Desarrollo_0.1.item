@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_ibGXID1xEe62vIbRIQVWlQ" confirmationNeeded="false" name="Desarrollo">
+    <contextParameter xmi:id="_ibGXIT1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Port" prompt="Desarrollo_Transaccional_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_ibGXIj1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Server" prompt="Desarrollo_Transaccional_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_ibGXIz1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Password" prompt="Desarrollo_Transaccional_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:/IX/xzm7ihg1fO504z75qJP0LC+KGKNF7JFsEptsERb19mgD"/>
+    <contextParameter xmi:id="_ibGXJD1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Login" prompt="Desarrollo_Transaccional_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa"/>
+    <contextParameter xmi:id="_ibGXJT1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Database" prompt="Desarrollo_Transaccional_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="AdventureWorks2019"/>
+    <contextParameter xmi:id="_ibGXJj1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Schema" prompt="Desarrollo_Transaccional_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_ibGXJz1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_AdditionalParams" prompt="Desarrollo_Transaccional_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="encrypt=true; trustServerCertificate=true;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_ibGXKD1xEe62vIbRIQVWlQ" confirmationNeeded="false" name="Pruebas">
+    <contextParameter xmi:id="_ibGXKT1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Port" prompt="Desarrollo_Transaccional_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_ibGXKj1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Server" prompt="Desarrollo_Transaccional_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_ibGXKz1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Password" prompt="Desarrollo_Transaccional_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:rkxbvzAUV23t7lR/LowFpxa+Bis789Em0WIXJ6wmyMXI4gbq"/>
+    <contextParameter xmi:id="_ibGXLD1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Login" prompt="Desarrollo_Transaccional_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa"/>
+    <contextParameter xmi:id="_ibGXLT1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Database" prompt="Desarrollo_Transaccional_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="AdventureWorks2019"/>
+    <contextParameter xmi:id="_ibGXLj1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Schema" prompt="Desarrollo_Transaccional_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_ibGXLz1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_AdditionalParams" prompt="Desarrollo_Transaccional_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="encrypt=true; trustServerCertificate=true;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_ibGXMD1xEe62vIbRIQVWlQ" confirmationNeeded="false" name="Produccion">
+    <contextParameter xmi:id="_ibGXMT1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Port" prompt="Desarrollo_Transaccional_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_ibGXMj1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Server" prompt="Desarrollo_Transaccional_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_ibGXMz1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Password" prompt="Desarrollo_Transaccional_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:iE+RIUtabUpBzAiX3U41SJo4fTaht3ADsm4RLFNpwdnSovE+"/>
+    <contextParameter xmi:id="_ibGXND1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Login" prompt="Desarrollo_Transaccional_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa"/>
+    <contextParameter xmi:id="_ibGXNT1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Database" prompt="Desarrollo_Transaccional_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="AdventureWorks2019"/>
+    <contextParameter xmi:id="_ibGXNj1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_Schema" prompt="Desarrollo_Transaccional_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_ibGXNz1xEe62vIbRIQVWlQ" comment="" name="Desarrollo_Transaccional_AdditionalParams" prompt="Desarrollo_Transaccional_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="encrypt=true; trustServerCertificate=true;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

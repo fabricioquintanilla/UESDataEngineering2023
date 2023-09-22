@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Pruebas" jobType="Standard">
+  <context confirmationNeeded="false" name="Desarrollo">
+    <contextParameter comment="" name="Desarrollo_Transaccional_Port" prompt="Desarrollo_Transaccional_Port?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="1433" internalId="_a3C6bD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Server" prompt="Desarrollo_Transaccional_Server?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="localhost" internalId="_a3C6bT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Password" prompt="Desarrollo_Transaccional_Password?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_Password" value="enc:system.encryption.key.v1:4g83MvcJAvTbhnVja3GJ1YjjjNJj7q5TPy8AQEBUlfOR2qMO" internalId="_a3C6bj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Login" prompt="Desarrollo_Transaccional_Login?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="sa" internalId="_a3C6bz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Database" prompt="Desarrollo_Transaccional_Database?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="AdventureWorks2019" internalId="_a3C6cD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Schema" prompt="Desarrollo_Transaccional_Schema?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="" internalId="_a3C6cT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_AdditionalParams" prompt="Desarrollo_Transaccional_AdditionalParams?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="encrypt=true; trustServerCertificate=true;" internalId="_a3C6cj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_AdditionalParams" prompt="Desarrollo_Datawarehouse_AdditionalParams?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="encrypt=true; trustServerCertificate=true;" internalId="_a3C6cz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Server" prompt="Desarrollo_Datawarehouse_Server?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="localhost" internalId="_a3C6dD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Password" prompt="Desarrollo_Datawarehouse_Password?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_Password" value="enc:system.encryption.key.v1:y1gse+dE2+8e6WHrjvRVdMEOzDioDirwz8ZbgSRTsC6bQQsq" internalId="_a3C6dT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Database" prompt="Desarrollo_Datawarehouse_Database?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="DWVentasEmpresa" internalId="_a3C6dj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Port" prompt="Desarrollo_Datawarehouse_Port?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="1433" internalId="_a3C6dz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Schema" prompt="Desarrollo_Datawarehouse_Schema?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="" internalId="_a3C6eD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Login" prompt="Desarrollo_Datawarehouse_Login?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="sa" internalId="_a3C6eT1yEe62vIbRIQVWlQ"/>
+  </context>
+  <context confirmationNeeded="false" name="Pruebas">
+    <contextParameter comment="" name="Desarrollo_Transaccional_Port" prompt="Desarrollo_Transaccional_Port?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="1433" internalId="_a3C6bD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Server" prompt="Desarrollo_Transaccional_Server?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="localhost" internalId="_a3C6bT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Password" prompt="Desarrollo_Transaccional_Password?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_Password" value="enc:system.encryption.key.v1:cZP1YeLfhgGaacC7aCw6YGrm2iJWLoHVG+f1KAAYuqx7ymCr" internalId="_a3C6bj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Login" prompt="Desarrollo_Transaccional_Login?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="sa" internalId="_a3C6bz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Database" prompt="Desarrollo_Transaccional_Database?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="AdventureWorks2019" internalId="_a3C6cD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Schema" prompt="Desarrollo_Transaccional_Schema?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="" internalId="_a3C6cT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_AdditionalParams" prompt="Desarrollo_Transaccional_AdditionalParams?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="encrypt=true; trustServerCertificate=true;" internalId="_a3C6cj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_AdditionalParams" prompt="Desarrollo_Datawarehouse_AdditionalParams?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="encrypt=true; trustServerCertificate=true;" internalId="_a3C6cz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Server" prompt="Desarrollo_Datawarehouse_Server?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="127.0.0.1" internalId="_a3C6dD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Password" prompt="Desarrollo_Datawarehouse_Password?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_Password" value="enc:system.encryption.key.v1:8UtvrQfXynwf1BZR1kdkMbc6nusmpRLbXfY8ROes3nV8r1iM" internalId="_a3C6dT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Database" prompt="Desarrollo_Datawarehouse_Database?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="DWVentasEmpresa" internalId="_a3C6dj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Port" prompt="Desarrollo_Datawarehouse_Port?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="1433" internalId="_a3C6dz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Schema" prompt="Desarrollo_Datawarehouse_Schema?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="" internalId="_a3C6eD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Login" prompt="Desarrollo_Datawarehouse_Login?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="sa" internalId="_a3C6eT1yEe62vIbRIQVWlQ"/>
+  </context>
+  <context confirmationNeeded="false" name="Produccion">
+    <contextParameter comment="" name="Desarrollo_Transaccional_Port" prompt="Desarrollo_Transaccional_Port?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="1433" internalId="_a3C6bD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Server" prompt="Desarrollo_Transaccional_Server?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="localhost" internalId="_a3C6bT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Password" prompt="Desarrollo_Transaccional_Password?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_Password" value="enc:system.encryption.key.v1:/Sfk1exYAhmVkKNrREJhy+45IHURQHm7ZbvIo2rqi9pZcgJf" internalId="_a3C6bj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Login" prompt="Desarrollo_Transaccional_Login?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="sa" internalId="_a3C6bz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Database" prompt="Desarrollo_Transaccional_Database?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="AdventureWorks2019" internalId="_a3C6cD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_Schema" prompt="Desarrollo_Transaccional_Schema?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="" internalId="_a3C6cT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Transaccional_AdditionalParams" prompt="Desarrollo_Transaccional_AdditionalParams?" promptNeeded="false" repositoryContextId="_SfTBwD1xEe62vIbRIQVWlQ" type="id_String" value="encrypt=true; trustServerCertificate=true;" internalId="_a3C6cj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_AdditionalParams" prompt="Desarrollo_Datawarehouse_AdditionalParams?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="encrypt=true; trustServerCertificate=true;" internalId="_a3C6cz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Server" prompt="Desarrollo_Datawarehouse_Server?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="localhost" internalId="_a3C6dD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Password" prompt="Desarrollo_Datawarehouse_Password?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_Password" value="enc:system.encryption.key.v1:4tYSZIxLTa7VeaSi6ewRUlrCmxIqdXjj/iy0Q4D7n3uzbPar" internalId="_a3C6dT1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Database" prompt="Desarrollo_Datawarehouse_Database?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="DWVentasEmpresa" internalId="_a3C6dj1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Port" prompt="Desarrollo_Datawarehouse_Port?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="1433" internalId="_a3C6dz1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Schema" prompt="Desarrollo_Datawarehouse_Schema?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="" internalId="_a3C6eD1yEe62vIbRIQVWlQ"/>
+    <contextParameter comment="" name="Desarrollo_Datawarehouse_Login" prompt="Desarrollo_Datawarehouse_Login?" promptNeeded="false" repositoryContextId="_FKrUkD1yEe62vIbRIQVWlQ" type="id_String" value="sa" internalId="_a3C6eT1yEe62vIbRIQVWlQ"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:iLl3Z2GIji8MKBn4Mv3S33NBtybPYUpWOr3aJlJx" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/TOS_DI-8.0.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_mgmz8D1xEe62vIbRIQVWlQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMSSqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="URL" value="" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Desarrollo_Datawarehouse_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Desarrollo_Datawarehouse_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Desarrollo_Datawarehouse_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.Desarrollo_Datawarehouse_Database" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Desarrollo_Datawarehouse_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Desarrollo_Datawarehouse_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Desarrollo_Datawarehouse_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bxr6XLYeDUfN0KEVuwnrsud+50R+d5Q9ngK1NEzxUvcNdcas9ePuT62tRJXRRaSjPjd9Xi5pGFSEzk2DBhejIjQDMPFL"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;Estadisticas&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;Ejecucion&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;Metricas&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_YZvwQCqUEe6B3Ynav408lA" name="DataOperation"/>
+    <routinesParameter id="_YaLOECqUEe6B3Ynav408lA" name="Mathematical"/>
+    <routinesParameter id="_YaRUsCqUEe6B3Ynav408lA" name="Numeric"/>
+    <routinesParameter id="_YaVmICqUEe6B3Ynav408lA" name="Relational"/>
+    <routinesParameter id="_Yaf-MCqUEe6B3Ynav408lA" name="StringHandling"/>
+    <routinesParameter id="_YajokCqUEe6B3Ynav408lA" name="TalendDataGenerator"/>
+    <routinesParameter id="_Yan6ACqUEe6B3Ynav408lA" name="TalendDate"/>
+    <routinesParameter id="_Ya6N4CqUEe6B3Ynav408lA" name="TalendStringUtil"/>
+    <routinesParameter id="_Ya0HQCqUEe6B3Ynav408lA" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_jVVAMD1wEe62vIbRIQVWlQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Desarrollo_Transaccional_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Desarrollo_Transaccional_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Desarrollo_Transaccional_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Desarrollo_Transaccional_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Desarrollo_Transaccional_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1haItRj3SEXxWrjKf1QQlQNglIQg6M1OchRO5RaR4V6ujzYUXACWxWaP8QADXwBn5KUgKmjm5r6dhjxhS+PSnsUivGpD"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Desarrollo_Transaccional_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Base Transaccional"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mgmz8D1xEe62vIbRIQVWlQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Desarrollo_Datawarehouse_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Desarrollo_Datawarehouse_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Desarrollo_Datawarehouse_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Desarrollo_Datawarehouse_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Desarrollo_Datawarehouse_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:X/PZuwi3nWGuIjWbhmAuv7MEB9ot7JRgOXUY2CfWR6elUsq0nnAQZQekGiCOUyL5WkV+oi97xDliQLZ9/zLY+XbYGAQx"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Desarrollo_Datawarehouse_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Datawarehouse"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m+cuJUqlMOP0hGlbp9WI2EIDltcN/TSICPnl2Cq2" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select BusinessEntityID, NationalIDNumber, LoginID, JobTitle, MaritalStatus, Gender from HumanResources.Employee&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="BusinessEntityID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NationalIDNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoginID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobTitle"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MaritalStatus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Leer Tabla Empleado"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="BusinessEntityID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NationalIDNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="LoginID" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="JobTitle" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MaritalStatus" nullable="false" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Gender" nullable="false" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="__rQ5QDWUEe6VRuICVi0iXg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DimensionEmpleado" name="DimensionEmpleado">
+      <column comment="" key="false" length="15" name="DUI" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreCompleto" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="EmpleadoID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Puesto" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoCivil" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Sexo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="NombreCompleto" expression="row2.FirstName +&quot; &quot; + ( Relational.ISNULL(row2.MiddleName)?&quot;&quot;:row2.MiddleName ) + &quot; &quot; + row2.LastName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoCivil" expression="row1.MaritalStatus == &quot;M&quot; ? &quot;Casado&quot; : &quot;Soltero&quot; " type="id_String"/>
+        <mapperTableEntries name="Sexo" expression="row1.Gender == &quot;M&quot; ? &quot;Masculino&quot; : &quot;Femenino&quot; " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="DimensionEmpleado">
+        <mapperTableEntries name="DUI" expression="row1.NationalIDNumber " type="id_String"/>
+        <mapperTableEntries name="NombreCompleto" expression="Var.NombreCompleto " type="id_String"/>
+        <mapperTableEntries name="EmpleadoID" expression="row1.BusinessEntityID " type="id_Integer"/>
+        <mapperTableEntries name="Puesto" expression="row1.JobTitle " type="id_String"/>
+        <mapperTableEntries name="EstadoCivil" expression="Var.EstadoCivil " type="id_String"/>
+        <mapperTableEntries name="Sexo" expression="Var.Sexo " type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="BusinessEntityID" type="id_Integer"/>
+        <mapperTableEntries name="NationalIDNumber" type="id_String"/>
+        <mapperTableEntries name="LoginID" type="id_String"/>
+        <mapperTableEntries name="JobTitle" type="id_String"/>
+        <mapperTableEntries name="MaritalStatus" type="id_String"/>
+        <mapperTableEntries name="Gender" type="id_String"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="BusinessEntityID" expression="row1.BusinessEntityID " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="PersonType" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Title" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MiddleName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Suffix" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EmailPromotion" type="id_Character" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlSCD" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBSCD_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
+    <elementParameter field="TEXT" name="SERVER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kmsZlg1JHQ4fX5iz8MiW25pynzGCjPSwnPFy789G" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DimEmpleado&quot;"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="COLUMN_LIST" name="SURROGATE_KEY" value="EmpleadoKey" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SK_CREATION" value="AUTO_INCREMENT" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SK_INPUT_FIELD" value="DUI" show="false"/>
+    <elementParameter field="TEXT" name="SK_ROUTINE" value="Numeric.sequence(&quot;seq&quot;, 1, 1)" show="false"/>
+    <elementParameter field="TABLE" name="SOURCE_KEYS" show="false">
+      <elementValue elementRef="NAME" value="EmpleadoID"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_SAVE_MEM_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SOURCE_KEY_INC_NULL" value="false"/>
+    <elementParameter field="CHECK" name="USE_L0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_L1" value="true" show="false"/>
+    <elementParameter field="TABLE" name="L1_FIELDS" show="false">
+      <elementValue elementRef="NAME" value="EstadoCivil"/>
+      <elementValue elementRef="NAME" value="Sexo"/>
+      <elementValue elementRef="NAME" value="DUI"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_UPDATE_ACTIVE" value="false"/>
+    <elementParameter field="CHECK" name="USE_L2" value="true" show="false"/>
+    <elementParameter field="TABLE" name="L2_FIELDS" show="false">
+      <elementValue elementRef="NAME" value="NombreCompleto"/>
+      <elementValue elementRef="NAME" value="Puesto"/>
+    </elementParameter>
+    <elementParameter field="COLUMN_LIST" name="L2_STARTDATE_FIELD" value="fecha_inicio" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="L2_STARTDATE_VALUE" value="JOB_START_TIME" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="L2_STARTDATE_INPUT_FIELD" value="DUI" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="L2_ENDDATE_FIELD" value="fecha_fin" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="L2_ENDDATE_VALUE" value="NULL_VALUE" show="false"/>
+    <elementParameter field="TEXT" name="L2_ENDDATE_FIXED_VALUE" value="&quot;2500&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_L2_ACTIVE" value="true" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="L2_ACTIVE_FIELD" value="scd_activo" show="false"/>
+    <elementParameter field="CHECK" name="USE_L2_VERSION" value="true" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="L2_VERSION_FIELD" value="scd_version" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Version must be an Integer)" show="false"/>
+    <elementParameter field="CHECK" name="USE_L3" value="false" show="false"/>
+    <elementParameter field="TABLE" name="L3_FIELDS" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="L2_ENDDATE_TIME_DETAILS" value="&quot;12:00:00&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOICE" value="(Time pattern: 'HH:mm:ss')" show="false"/>
+    <elementParameter field="CHECK" name="DEBUG" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DimensionEmpleado" name="tDBSCD_1">
+      <column comment="" key="false" length="15" name="DUI" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreCompleto" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="EmpleadoID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Puesto" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoCivil" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Sexo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Column generated by scd editor." defaultValue="" key="false" length="-1" name="fecha_inicio" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="Column generated by scd editor." defaultValue="" key="false" length="-1" name="fecha_fin" nullable="true" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="Column generated by scd editor." defaultValue="" key="false" length="-1" name="scd_version" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="Column generated by scd editor." defaultValue="" key="false" length="-1" name="scd_activo" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="Column generated by scd editor." defaultValue="" key="true" length="-1" name="EmpleadoKey" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="DimensionEmpleado" name="REJECT">
+      <column comment="" key="false" length="15" name="DUI" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreCompleto" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="EmpleadoID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Puesto" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoCivil" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Sexo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="-8" offsetLabelY="37" posX="96" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Wl3rg44FPS3LWsueykWII6fsIjUK3gafrfH+LKp4" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select BusinessEntityID, PersonType, Title, FirstName, MiddleName, LastName, Suffix, EmailPromotion from Person.Person&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="BusinessEntityID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailPromotion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Leer Tabla Persona"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" defaultValue="" key="false" length="10" name="BusinessEntityID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PersonType" nullable="true" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Title" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FirstName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MiddleName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Suffix" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="EmailPromotion" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_Character" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="DimensionEmpleado" lineStyle="0" metaname="DimensionEmpleado" offsetLabelX="-8" offsetLabelY="-44" source="tMap_1" target="tDBSCD_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DimensionEmpleado" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

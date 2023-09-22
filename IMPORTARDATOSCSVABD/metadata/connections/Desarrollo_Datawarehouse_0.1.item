@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_wiuZID1xEe62vIbRIQVWlQ" name="Desarrollo_Datawarehouse" id="_mgmz8D1xEe62vIbRIQVWlQ" label="Desarrollo_Datawarehouse" dataPackage="_FjQzsD1yEe62vIbRIQVWlQ" ContextMode="true" ContextId="_FKrUkD1yEe62vIbRIQVWlQ" contextName="Desarrollo" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://localhost:1433;DatabaseName=DWVentasEmpresa;encrypt=true; trustServerCertificate=true;" dbVersionString="MSSQL_PROP" Port="context.Desarrollo_Datawarehouse_Port" Username="context.Desarrollo_Datawarehouse_Login" Password="context.Desarrollo_Datawarehouse_Password" ServerName="context.Desarrollo_Datawarehouse_Server" DatasourceName="" FileFieldName="" SID="context.Desarrollo_Datawarehouse_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="context.Desarrollo_Datawarehouse_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.Desarrollo_Datawarehouse_Schema">
+    <taggedValue xmi:id="_wiuZIT1xEe62vIbRIQVWlQ" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_wi9CoD1xEe62vIbRIQVWlQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_wi9CoT1xEe62vIbRIQVWlQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_wi9Coj1xEe62vIbRIQVWlQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_wi9Coz1xEe62vIbRIQVWlQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_wi9CpD1xEe62vIbRIQVWlQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_wi9CpT1xEe62vIbRIQVWlQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_wi9Cpj1xEe62vIbRIQVWlQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_zt_bQD1xEe62vIbRIQVWlQ" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_zt_bQT1xEe62vIbRIQVWlQ" tag="DB ProductVersion" value="15.00.2101"/>
+    <taggedValue xmi:id="_zt_bQj1xEe62vIbRIQVWlQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_wiuZIj1xEe62vIbRIQVWlQ" key="CONN_PARA_KEY_USERNAME" value="context.Desarrollo_Datawarehouse_Login"/>
+    <parameters xmi:id="_yBRawD1xEe62vIbRIQVWlQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_FjQzsD1yEe62vIbRIQVWlQ" name="DWVentasEmpresa" dataManager="_wiuZID1xEe62vIbRIQVWlQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzsT1yEe62vIbRIQVWlQ" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzsj1yEe62vIbRIQVWlQ" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzsz1yEe62vIbRIQVWlQ" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQztD1yEe62vIbRIQVWlQ" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQztT1yEe62vIbRIQVWlQ" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQztj1yEe62vIbRIQVWlQ" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQztz1yEe62vIbRIQVWlQ" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzuD1yEe62vIbRIQVWlQ" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzuT1yEe62vIbRIQVWlQ" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzuj1yEe62vIbRIQVWlQ" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzuz1yEe62vIbRIQVWlQ" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzvD1yEe62vIbRIQVWlQ" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FjQzvT1yEe62vIbRIQVWlQ" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
